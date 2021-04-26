@@ -1,0 +1,24 @@
+.map-container {
+  width: 1200px;
+  min-width: 484px;
+  height: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+}
+
+.map-main-card {
+  width: 60%;
+  height: 100%;
+  float: left;
+  margin-left: 4px;
+}
+
+.pin-data-card {
+  width: 30%;
+  height: 100%;
+  float: left;
+  margin-left: 4px;
+}

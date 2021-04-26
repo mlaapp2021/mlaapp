@@ -1,0 +1,12 @@
+mat-toolbar {
+  position: fixed;
+  z-index: 100;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.username-container {
+    cursor: pointer;
+}

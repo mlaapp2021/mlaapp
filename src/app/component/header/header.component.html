@@ -1,0 +1,22 @@
+<mat-toolbar class="toolbar-container" color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="menu"
+    (click)="displayLandingPage()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>MLA App</span>
+  <span class="example-spacer"></span>
+
+  <button
+    *ngIf="isUserAuthenticated"
+    mat-icon-button
+    aria-label=""
+    (click)="logout()"
+  >
+    <mat-icon>person</mat-icon>
+  </button>
+  <span class="username-container" *ngIf="isUserAuthenticated" (click)="logout()">{{ username }}</span>
+</mat-toolbar>

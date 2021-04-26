@@ -1,0 +1,43 @@
+<mat-card class="report-issue-card">
+  <mat-card-title>Report Issue</mat-card-title>
+
+  <div class="report-form-container">
+    <form
+      class="report-issue-form"
+      [formGroup]="reportIssueForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input
+          matInput
+          type="text"
+          maxlength="256"
+          formControlName="username"
+          required
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Location</mat-label>
+        <input matInput type="text" formControlName="location" required />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Issue Description</mat-label>
+        <textarea
+          matInput
+          type="text"
+          formControlName="issueDescription"
+          required
+        ></textarea>
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button type="submit" color="primary">
+          Report Issue
+        </button>
+      </div>
+    </form>
+  </div>
+</mat-card>

@@ -1,0 +1,25 @@
+.main-div {
+  /*margin: theme.spacing(1);*/
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  padding: "6px 8px";
+}
+
+a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #EBEDF2;
+}
+
+mat-card {
+  border-radius: 0;
+  font-size: 12px;
+  background-color: #021f6f;
+  color: #EBEDF2;
+}
+
+mat-label {
+  color: #b3c1dd;
+}

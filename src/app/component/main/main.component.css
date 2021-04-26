@@ -1,0 +1,24 @@
+.main-drawer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.main-drawer-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.app-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/img/AdobeColor-blogging blog word coder coding using laptop.jpeg");
+}

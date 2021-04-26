@@ -1,0 +1,21 @@
+.example-full-width {
+  width: 100%;
+}
+
+.report-issue-card {
+  width: 400px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  border-radius: 30px;
+}
+
+.mat-chip-buttons-container {
+  margin: 84px;
+}
+
+.report-form-container {
+  margin: 84px;
+}

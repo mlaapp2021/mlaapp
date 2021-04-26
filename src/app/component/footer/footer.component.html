@@ -1,0 +1,30 @@
+<mat-card class="main-div">
+  <mat-card style="display: flex; justify-content: center; align-items: center; box-shadow: none;">
+    <p>&copy; {{ currentYear }} ORGNAME. All rights reserved.</p>
+  </mat-card>
+
+  <mat-card style="display: flex; justify-content: center; align-items: center; box-shadow: none;">
+    <mat-list>
+      <mat-list-item>
+        <a routerLink="/faqs">FAQs</a>
+        <a routerLink="/privacystatement"> Privacy Statement </a>
+        <a routerLink="/egalandregulatory"> Legal &amp; Regulatory </a>
+        <a routerLink="/contactus">Contact Us</a>
+        <a routerLink="/feedback">Feedback</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+
+  <mat-card style="display: flex; justify-content: center; align-items: center; box-shadow: none;">
+    <form [formGroup]="subscribeForm" (ngSubmit)="onSubmit()">
+      <p>Subscribe for free products news and updates</p>
+      <mat-form-field appearance="outline" style="margin-right: 10px;">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="emailid" />
+      </mat-form-field>
+      <button mat-icon-button type="submit">
+        <mat-icon style="padding-bottom: 0.3em;">mail</mat-icon>
+      </button>
+    </form>
+  </mat-card>
+</mat-card>
