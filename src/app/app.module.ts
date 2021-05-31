@@ -26,6 +26,9 @@ import { ContactUsComponent } from './component/main/main-content/contact-us/con
 import { LegalAndRegulatoryComponent } from './component/main/main-content/legal-and-regulatory/legal-and-regulatory.component';
 import { LandingComponent } from './component/main/main-content/landing/landing.component';
 import { ReportIssueComponent } from './component/main/main-content/report-issue/report-issue.component';
+import { StoreModule, StoreRootModule } from '@ngrx/store';
+import { authReducer } from './state/test.reducer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +48,7 @@ import { ReportIssueComponent } from './component/main/main-content/report-issue
     PrivacyStatementComponent,
     ContactUsComponent,
     LegalAndRegulatoryComponent,
-    LandingComponent
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,9 +56,9 @@ import { ReportIssueComponent } from './component/main/main-content/report-issue
     MaterialModules,
     HttpClientModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

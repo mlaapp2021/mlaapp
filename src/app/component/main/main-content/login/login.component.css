@@ -24,6 +24,11 @@ button {
   width: 100%;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .login-card {
   width: 400px;
   padding-top: 30px;
@@ -33,6 +38,11 @@ button {
   flex-flow: column;
   border-radius: 30px;
   background-color: #fbc7b4;
+}
+
+.text-container1 {
+  grid-column: 3/3;
+  grid-row: 1;
 }
 
 .mat-chip-buttons-container {
